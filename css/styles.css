@@ -220,11 +220,9 @@ h1, h2, h3, p, section, ul {
     margin-left: auto;
 
     background-color: #C4C4C4;
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-        ),
+        rgba(47, 48, 58, 0.4)),
         url('../images/header-background-Img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -244,6 +242,10 @@ h1, h2, h3, p, section, ul {
 }
 
 .hero-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
     margin: 0 auto;
     padding: 10px 32px;
 
@@ -252,15 +254,11 @@ h1, h2, h3, p, section, ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -288,12 +286,14 @@ h1, h2, h3, p, section, ul {
 }
 
 .icon-benefits-container {
-    margin-bottom: 30px;
     height: 120px;
-    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+    
     background-color: var(--secondary-font-color);
     text-align: center;
-    padding: 25px 100px;
+    border-radius: 4px;
+    
 }
 
 .benefits-name {
@@ -385,6 +385,7 @@ h1, h2, h3, p, section, ul {
 .social-media-list {
     display: flex;
     justify-content: center;
+
     height: 44px;
 }
 
@@ -399,6 +400,7 @@ h1, h2, h3, p, section, ul {
 .social-media-link {
     display: block;
     border-radius: 50%;
+
     width: 44px;
     height: 44px;
     padding: 12px;
@@ -417,6 +419,8 @@ h1, h2, h3, p, section, ul {
 .social-media-icon {
     width: 20px;
     height: 20px;
+    /* width: 100%;
+    height: 100%; */
 }
 
 /* постоянные клиенты */
@@ -442,23 +446,27 @@ h1, h2, h3, p, section, ul {
 .client-link {
     display: block;
     text-align: center;
-    padding: 16px 32px;
 
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
     width: 170px;
     height: 92px;
 
+    padding: 16px 32px;
+
     color: var(--icons-color);
     fill: var(--icons-color);
+
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
 }
 
 .client-link:hover,
 .client-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
     color: var(--accent-color);
     fill: var(--accent-color);
+
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    
 }
 
 /* подвал сайта */
@@ -562,6 +570,7 @@ h1, h2, h3, p, section, ul {
 
 .filter-button {
     padding: 6px 22px;
+
     background-color: var(--secondary-font-color);
     color: var(--secondary-text-color);
     font-family: 'Roboto';
@@ -578,7 +587,8 @@ h1, h2, h3, p, section, ul {
 }
 
 /* перечень выполненных проектов */
-.filter-button:hover, .filter-button:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
 
@@ -618,6 +628,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 .project-text {
     padding: 20px 24px;
+
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
